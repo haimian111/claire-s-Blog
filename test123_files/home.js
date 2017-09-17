@@ -1,0 +1,4 @@
+$(document).ready(function(){$(window).scroll(function(){var scroll=$(this).scrollTop();var middle=$(window).height()/ 2;
+if(scroll>$('.feature--schedule').offset().top- middle){$('.feature--schedule').addClass('is-active');}
+if(scroll>$('.feature--message').offset().top- middle){$('.feature--message').addClass('is-active');}
+if(scroll>$('.feature--broadcast').offset().top- middle){$('.feature--broadcast').addClass('is-active');}});$("#typed").css('height',$("#typed").height()).text("").css("color","#fff").typed({strings:["Open-Source Scheduling Apps <i class='fa fa-commenting-o' aria-hidden='true'></i>"],typeSpeed:10,showCursor:false,callback:complete});function complete(){$(".lead").addClass("is-complete");}});
